@@ -6,7 +6,7 @@
   "name": "a04-ronjoshi-unc",
   "description": "This assignment will help you stand up a web API using Express and the module that you produced for a03.",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/comp426-2022-fall/a04-ronjoshi-unc/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/comp426-2022-fall/a04-ronjoshi-unc#readme"
 }
