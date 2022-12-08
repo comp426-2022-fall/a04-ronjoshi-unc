@@ -16,10 +16,12 @@ app.get('/app/', (req, res) => {
 	res.send('200 OK');
 });
 
+//roll endpoint, but get
 app.get('/app/roll/', (req, res) => {
 	res.send(roll(6,2,1));
 });
 
+//different roll endpoint (post)
 app.post('/app/roll/', (req, res) => {
 	var sides = parseInt(req.body.sides, 10);
 	var dice = parseInt(req.body.dice, 10);
