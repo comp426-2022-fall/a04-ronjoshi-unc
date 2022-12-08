@@ -39,6 +39,8 @@ app.get('/app/roll/:sides/:dice/:rolls/', (req, res) => {
 	var sides = parseInt(req.params.sides, 10);
 	var dice = parseInt(req.params.dice, 10);
 	var rolls = parseInt(req.params.rolls, 10);
+
+	//run the function that we imported
 	res.send(roll(sides, dice, rolls));
 });
 
