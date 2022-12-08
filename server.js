@@ -5,10 +5,13 @@ import { roll } from './lib/roll.js';
 const app = express();
 
 app.use(express.urlencoded({extended: true}));
+
+//get arguments from minimist
 const args = minimist(process.argv.slice(2));
 
 const port = args.port || 5000;
 
+//response code added for /app endpoint
 app.get('/app/', (req, res) => {
 	res.send('200 OK');
 });
