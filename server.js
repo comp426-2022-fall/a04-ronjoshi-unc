@@ -29,11 +29,13 @@ app.post('/app/roll/', (req, res) => {
 	res.send(roll(sides,dice,rolls));
 });
 
+//roll with sides
 app.get('/app/roll/:sides/', (req, res) => {
 	var sides = parseInt(req.params.sides, 10);
 	res.send(roll(sides, 2, 1));
 });
 
+//roll with sides and dice
 app.get('/app/roll/:sides/:dice/', (req, res) => {
 	var sides = parseInt(req.params.sides, 10);
 	var dice = parseInt(req.params.dice, 10);
